@@ -14089,10 +14089,14 @@ a.btn-line:hover::after {
   text-align: center;
 }
 .about-cyber-security-wrapper .pre {
-  color: #050d20;
-  padding: 5px 20px;
-  border: 1px solid #dee4ff;
-  border-radius: 100px;
+  display: inline-block;
+  padding: 2px 13px;
+  border: 1px solid #ff6f35;
+  background: #ff6f35;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 5px;
 }
 .about-cyber-security-wrapper .title {
   font-size: 56px;
