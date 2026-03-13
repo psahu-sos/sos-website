@@ -2459,7 +2459,6 @@ Copyright (c) 2015 Daniel Eden
   animation-name: tada;
 }
 
-/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 @-webkit-keyframes wobble {
   from {
     -webkit-transform: none;
@@ -12035,15 +12034,15 @@ Copyright (c) 2015 Daniel Eden
 /* Elements  */
 .rts-banner-area-one {
   height: 910px;
-  background-image: url(../images/banner/01.webp);
+  background-image: url(../image/01.webp);
   display: flex;
   align-items: center;
 }
 .rts-banner-area-one.two {
-  background-image: url(../images/banner/05.webp);
+  background-image: url(../image/05.webp);
 }
 .rts-banner-area-one.three {
-  background-image: url(../images/banner/06.webp);
+  background-image: url(../image/06.webp);
 }
 
 .banner-style-one-wrapper-inner {
@@ -12415,7 +12414,7 @@ Copyright (c) 2015 Daniel Eden
 }
 
 .bg_image-three-banner {
-  background-image: url(../images/banner/03.webp);
+  background-image: url(../image/03.webp);
   height: 826px;
   display: flex;
   align-items: center;
@@ -12642,7 +12641,7 @@ Copyright (c) 2015 Daniel Eden
 }
 
 .banner-bg-attach-agency {
-  background-image: url(../images/banner/08.webp);
+  background-image: url(../image/08.webp);
   height: 660px;
   background-attachment: fixed;
 }
@@ -12653,7 +12652,7 @@ Copyright (c) 2015 Daniel Eden
 }
 
 .banner-app-development {
-  background-image: url(../images/banner/09.webp);
+  background-image: url(../image/09.webp);
   height: 930px;
 }
 @media only screen and (max-width: 1199px) {
@@ -12768,7 +12767,7 @@ Copyright (c) 2015 Daniel Eden
   height: 930px;
   align-items: center;
   display: flex;
-  background-image: url(../images/banner/15.webp);
+  background-image: url(../image/15.webp);
 }
 
 .banner-content-cyber-security {
@@ -12920,7 +12919,7 @@ Copyright (c) 2015 Daniel Eden
 
 .rts-banner-area-start-machine {
   height: 930px;
-  background-image: url(../images/banner/26.webp);
+  background-image: url(../image/26.webp);
   display: flex;
   align-items: center;
   position: relative;
@@ -12966,7 +12965,7 @@ Copyright (c) 2015 Daniel Eden
   position: absolute;
   inset: 0;
   color: transparent;
-  background: url(../images/banner/26.webp) center/cover no-repeat;
+  background: url(../image/26.webp) center/cover no-repeat;
   -webkit-background-clip: text;
   background-clip: text;
   left: 50%;
@@ -13099,7 +13098,7 @@ Copyright (c) 2015 Daniel Eden
 
 .rts-banner-data-science {
   height: 840px;
-  background-image: url(../images/banner/27.webp);
+  background-image: url(../image/27.webp);
 }
 
 .rts-banner-data-science {
@@ -13768,7 +13767,7 @@ a.btn-line:hover::after {
 
 .rts-about-breadcrumb-area {
   height: 541px;
-  background-image: url(../images/about/06.webp);
+  background-image: url(../image/06.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -14110,7 +14109,7 @@ a.btn-line:hover::after {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-image: url(../images/about/17.webp);
+  background-image: url(../image/17.webp);
   background-size: cover;
 }
 .about-our-company-area-cyber .left-area-about {
@@ -15501,7 +15500,7 @@ body.demo-app-development .rts-mega-menu.sm-mega-70 {
   right: 0;
   top: 0;
   bottom: 0;
-  background-image: url(../images/case/01.svg);
+  background-image: url(../image/01.svg);
   height: 100%;
   width: 387.75px;
   z-index: -1;
@@ -16095,7 +16094,7 @@ button {
 }
 
 .contact-area-two {
-  background-image: url(../images/contact/01.webp);
+  background-image: url(../image/01.webp);
   padding: 60px 100px;
 }
 @media only screen and (max-width: 991px) {
@@ -16938,7 +16937,7 @@ button {
 }
 
 .rts-testimonials-style-three {
-  background-image: url(../images/testimonials/05.webp);
+  background-image: url(../image/05.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -17396,7 +17395,7 @@ button {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(../images/banner/05.webp);
+  background-image: url(../image/05.webp);
 }
 @media only screen and (max-width: 575px) {
   .rts-bg-video-area-large {
@@ -17521,7 +17520,7 @@ button {
 }
 
 .rts-why-choose-us-area-matchin {
-  background-image: url(../images/why-choose/02.webp);
+  background-image: url(../image/02.webp);
 }
 .rts-why-choose-us-area-matchin
   .why-choose-us-right-area-machine
@@ -17803,7 +17802,7 @@ button {
   left: 0;
   width: 12px;
   height: 12px;
-  background-image: url(../images/process/05.svg);
+  background-image: url(../image/05.svg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -17945,7 +17944,7 @@ button {
 .demo-app-development
   .working-process-three-main
   .working-process-wrapper-three::before {
-  background-image: url(../images/process/06.svg);
+  background-image: url(../image/06.svg);
 }
 .demo-app-development .single-testimonails-style-one {
   padding: 30px 20px;
@@ -17954,7 +17953,7 @@ button {
 .demo-machine-learning
   .working-process-three-main
   .working-process-wrapper-three::before {
-  background-image: url(../images/process/06.svg);
+  background-image: url(../image/06.svg);
 }
 
 .project-two .outer-box {
@@ -18144,7 +18143,7 @@ button {
 }
 
 .bg_image-project-two {
-  background-image: url(../images/project/02.webp);
+  background-image: url(../image/02.webp);
   background-repeat: no-repeat;
 }
 .bg_image-project-two .title-left-wrapper * {
@@ -18341,7 +18340,7 @@ button {
 }
 
 .call-to-action-wrapper-three {
-  background-image: url(../images/cta/01.webp);
+  background-image: url(../image/01.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -18551,7 +18550,7 @@ button {
 
 .rts-cta-main-wrapper-machine {
   padding: 76px;
-  background-image: url(../images/cta/04.webp);
+  background-image: url(../image/04.webp);
   text-align: center;
 }
 .rts-cta-main-wrapper-machine .title {
@@ -19140,7 +19139,7 @@ button {
   content: "";
   height: 100%;
   width: 0%;
-  background-image: url(../images/banner/25.webp);
+  background-image: url(../image/25.webp);
   left: 0;
   top: 0;
   bottom: 0;
@@ -19234,7 +19233,7 @@ button {
 }
 
 .rts-pricing-area-machine {
-  background-image: url(../images/testimonials/12.webp);
+  background-image: url(../image/12.webp);
 }
 .rts-pricing-area-machine .title-center-wrapper .title {
   color: #fff;
@@ -20162,7 +20161,7 @@ button {
 .career-video-area-large {
   height: 600px;
   border-radius: 10px !important;
-  background-image: url(../images/career/03.webp);
+  background-image: url(../image/03.webp);
 }
 @media only screen and (max-width: 479px) {
   .career-video-area-large {
@@ -21157,7 +21156,7 @@ button {
 }
 
 .rts-testimonials-style-three.area-4 {
-  background-image: url(../images/testimonials/bg_map.webp);
+  background-image: url(../image/bg_map.webp);
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: auto;
@@ -21500,7 +21499,7 @@ button {
 }
 
 .fun-facts-area-wrapper-machine {
-  background-image: url(../images/facts/01.webp);
+  background-image: url(../image/01.webp);
   padding: 52px 60px;
   display: flex;
   align-items: center;
@@ -23094,7 +23093,7 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 }
 
 #anywhere-home {
-  cursor: url(../images/banner/shape/close.png), auto;
+  cursor: url(../image/shape/close.png), auto;
   background: #0e1013;
   position: fixed;
   width: 100%;
