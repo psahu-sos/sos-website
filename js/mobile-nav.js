@@ -7,7 +7,10 @@
   "use strict";
 
   function normalizePath(pathname) {
-    const clean = (pathname || "").replace(/\\/g, "/").split("?")[0].split("#")[0];
+    const clean = (pathname || "")
+      .replace(/\\/g, "/")
+      .split("?")[0]
+      .split("#")[0];
     if (!clean || clean === "/") return "/index.html";
     if (clean.endsWith("/")) return `${clean}index.html`;
     return clean;
@@ -17,25 +20,33 @@
     if (!root) return;
 
     const currentPath = normalizePath(window.location.pathname);
-    const links = root.querySelectorAll('a[href]:not([href="#"]):not([href^="javascript"])');
+    const links = root.querySelectorAll(
+      'a[href]:not([href="#"]):not([href^="javascript"])',
+    );
 
     links.forEach((link) => {
       let linkPath = "";
       try {
-        linkPath = normalizePath(new URL(link.getAttribute("href"), window.location.href).pathname);
+        linkPath = normalizePath(
+          new URL(link.getAttribute("href"), window.location.href).pathname,
+        );
       } catch {
         return;
       }
 
       const isMatch =
         linkPath === currentPath ||
-        (linkPath.endsWith("/index.html") && currentPath.endsWith("/index.html") && linkPath === currentPath);
+        (linkPath.endsWith("/index.html") &&
+          currentPath.endsWith("/index.html") &&
+          linkPath === currentPath);
 
       if (isMatch) {
         link.classList.add("is-current");
         link.setAttribute("aria-current", "page");
 
-        const parentDropdown = link.closest("li.has-dropdown, li.has-droupdown, li.has-submenu");
+        const parentDropdown = link.closest(
+          "li.has-dropdown, li.has-droupdown, li.has-submenu",
+        );
         if (parentDropdown) {
           const parentLink = parentDropdown.querySelector(":scope > a");
           if (parentLink) {
@@ -56,36 +67,36 @@
         <div class="mobile-nav-panel" id="mobileNavPanel">
           <div class="mobile-nav-header">
             <div class="mobile-nav-logo">
-              <img src="${getImagePath('logo/02.svg')}" alt="SOS Infocity" />
+              <img src="${getImagePath("logo/02.svg")}" alt="SOS Infocity" />
             </div>
             <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close menu">
               <i class="fas fa-times"></i>
             </button>
           </div>
           <ul class="mobile-nav-menu" id="mobileNavMenu">
-            <li><a href="${getNavPath('index.html')}">Home</a></li>
-            <li><a href="${getNavPath('pages/about.html')}">About</a></li>
+            <li><a href="${getNavPath("index.html")}">Home</a></li>
+            <li><a href="${getNavPath("pages/about.html")}">About</a></li>
             <li class="has-submenu">
               <a href="javascript:void(0);" class="mobile-nav-main-link">
                 Solutions
                 <span class="mobile-nav-toggle-arrow"><i class="fas fa-chevron-down"></i></span>
               </a>
               <ul class="mobile-nav-submenu">
-                <li><a href="${getNavPath('pages/ai-intelligent-solutions.html')}">AI-Based & Intelligent Technology</a></li>
-                <li><a href="${getNavPath('pages/it-network-solutions.html')}">IT & Network Solutions</a></li>
-                <li><a href="${getNavPath('pages/security-surveillance.html')}">Security & Surveillance</a></li>
-                <li><a href="${getNavPath('pages/connectivity-solutions.html')}">Connectivity Solutions</a></li>
-                <li><a href="${getNavPath('pages/data-bi-analytics.html')}">Data & BI Analytics</a></li>
-                <li><a href="${getNavPath('pages/new-age-technologies.html')}">New Age Technologies</a></li>
-                <li><a href="${getNavPath('pages/software-engineering.html')}">Software Engineering Services</a></li>
+                <li><a href="${getNavPath("pages/ai-intelligent-solutions.html")}">AI-Based & Intelligent Technology</a></li>
+                <li><a href="${getNavPath("pages/it-network-solutions.html")}">IT & Network Solutions</a></li>
+                <li><a href="${getNavPath("pages/security-surveillance.html")}">Security & Surveillance</a></li>
+                <li><a href="${getNavPath("pages/connectivity-solutions.html")}">Connectivity Solutions</a></li>
+                <li><a href="${getNavPath("pages/data-bi-analytics.html")}">Data & BI Analytics</a></li>
+                <li><a href="${getNavPath("pages/new-age-technologies.html")}">New Age Technologies</a></li>
+                <li><a href="${getNavPath("pages/software-engineering.html")}">Software Engineering Services</a></li>
               </ul>
             </li>
-            <li><a href="${getNavPath('pages/impact.html')}">Impact</a></li>
-            <li><a href="${getNavPath('pages/life-at-sos.html')}">Life at SOS</a></li>
-            <li><a href="${getNavPath('pages/connect.html')}">Contact</a></li>
+            <li><a href="${getNavPath("pages/impact.html")}">Impact</a></li>
+            <li><a href="${getNavPath("pages/life-at-sos.html")}">Life at SOS</a></li>
+            <li><a href="${getNavPath("pages/connect.html")}">Contact</a></li>
           </ul>
           <div class="mobile-nav-cta">
-            <a href="${getNavPath('pages/connect.html')}">Contact Us</a>
+            <a href="${getNavPath("pages/connect.html")}">Contact Us</a>
             <a href="javascript:void(0);" aria-disabled="true" title="Workspace login link pending">Workspace Login</a>
             <a href="javascript:void(0);" aria-disabled="true" title="Access mail link pending">Access Mail</a>
           </div>
@@ -96,7 +107,10 @@
     // Insert mobile nav into body
     const navContainer = document.createElement("div");
     navContainer.innerHTML = mobileNavHTML;
-    document.body.insertBefore(navContainer.firstElementChild, document.body.firstChild);
+    document.body.insertBefore(
+      navContainer.firstElementChild,
+      document.body.firstChild,
+    );
 
     // Add hamburger button to header
     const header = document.querySelector(".header-one");
@@ -192,13 +206,13 @@
     document.addEventListener(
       "touchmove",
       (e) => {
-      if (mobileNavWrapper.classList.contains("active")) {
-        if (!mobileNavPanel.contains(e.target)) {
-          e.preventDefault();
+        if (mobileNavWrapper.classList.contains("active")) {
+          if (!mobileNavPanel.contains(e.target)) {
+            e.preventDefault();
+          }
         }
-      }
       },
-      { passive: false }
+      { passive: false },
     );
 
     // ========== CLOSE MENU ON ESCAPE KEY ==========
@@ -237,8 +251,11 @@
   // ========== HELPER FUNCTIONS ==========
   function getImagePath(imagePath) {
     const pathname = window.location.pathname.replace(/\\/g, "/");
-    const isNestedPage = pathname.includes("/pages/") || pathname.includes("/blog/");
-    return isNestedPage ? `../assets/images/${imagePath}` : `assets/images/${imagePath}`;
+    const isNestedPage =
+      pathname.includes("/pages/") || pathname.includes("/blog/");
+    return isNestedPage
+      ? `../assets/images/${imagePath}`
+      : `assets/images/${imagePath}`;
   }
 
   function getNavPath(path) {
