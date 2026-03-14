@@ -18322,7 +18322,7 @@ button {
 }
 
 .project-two .title-area-between .right-area .btn-line {
-  color: #fff;
+  color: #000000;
 }
 .project-two .title-area-between .right-area .btn-line::after {
   transition: 0.3s;
