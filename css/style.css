@@ -18165,8 +18165,6 @@ button {
   position: relative;
   z-index: 10;
 }
-
-<<<<<<< HEAD
 .project-two .btn-line {
   color: #000 !important;
   display: inline-flex;
@@ -18175,18 +18173,18 @@ button {
 }
 
 .project-two .btn-line:hover {
-  color:#fe5b0f!important;
+  color: #fe5b0f !important;
 }
 
 .project-two .btn-line:hover i {
   color: #fe5b0f !important;
 }
+
 .bg_image-project-two {
   background-image: url(../image/02.webp);
   background-repeat: no-repeat;
 }
-=======
->>>>>>> 83031e784bcf00e59deacc693f98b12443f3c3e7
+
 .bg_image-project-two .title-left-wrapper * {
   color: #000000;
 }
