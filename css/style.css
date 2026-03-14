@@ -21871,8 +21871,8 @@ header.header-one.header-relative .button-wrapper-flex svg rect {
   gap: 12px;
   margin-bottom: 5px;
 }
-.select-area.language .has-dropdown::after {
-  display: none;
+.select-area.language  {
+  display: none !important;
 }
 .select-area.language .has-dropdown .submenu {
   max-width: 66px;
@@ -22060,33 +22060,15 @@ header.header-one.header-saas.sticky {
 .has-dropdown.mega-menu > a {
   position: relative;
   color: #fff;
-}
-
-.has-dropdown::after {
-  position: absolute;
-  content: "\f078";
-  right: -22px;
-  top: 51%;
-  transform: translateY(-50%);
-  font-weight: 400;
-  color: #ffffff;
-  font-family: "Font Awesome 6 Pro";
-  font-weight: 300;
-  font-size: 14px;
-}
-
-.has-dropdown.mega-menu > a::after {
-  position: absolute;
-  content: "\f078";
-  right: -22px;
-  top: 53%;
-  transform: translateY(-50%);
-  font-weight: 400;
-  color: #ffffff;
-  font-family: "Font Awesome 6 Pro";
-  font-weight: 300;
-  font-size: 14px;
-}
+}/*
+.has-dropdown > a::after{
+    content: "\f078";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 12px;
+    margin-left: 6px;
+    display: inline-block;
+}*/
 
 .nav-area ul li.main-nav {
   padding: 0 0;
@@ -25262,8 +25244,8 @@ hr {
     transition-duration: 0.01ms !important;
   }
 }
-
-/* submenu items ke template arrows completely remove */
+/*
+/* submenu items ke template arrows completely remove *
 .header-one .nav-area ul ul li a::before,
 .header-one .nav-area ul ul li a::after,
 .header-one .nav-area ul ul li a i {
