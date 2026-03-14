@@ -18156,10 +18156,6 @@ button {
   padding: 30px 30px;
 }
 
-.bg_image-project-two {
-  background-image: url(../image/02.webp);
-  background-repeat: no-repeat;
-}
 .bg_image-project-two .title-left-wrapper * {
   color: #fff;
 }
@@ -25229,4 +25225,24 @@ hr {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
+}
+
+.mobile-nav-toggle-arrow::before {
+  font-family: "Font Awesome 6 Free" !important;
+  font-weight: 900;
+}
+
+.mobile-nav-toggle-arrow::before {
+  content: "\f078"; /* chevron-down icon */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  display: inline-block;
+}
+
+.header-one .nav-area ul li.has-dropdown > a::after {
+  content: "\f078";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  margin-left: 6px;
+  font-size: 12px;
 }
