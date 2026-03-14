@@ -13417,7 +13417,7 @@ a.btn-line i {
   transition: transform 0.3s ease;
 }
 a.btn-line:hover {
-  color: var(--color-primary)!important;
+  color: var(--color-primary) !important;
 }
 a.btn-line:hover i {
   transform: translateX(3px);
@@ -18165,7 +18165,9 @@ button {
   position: relative;
   z-index: 10;
 }
-.project-two .btn-line {
+
+
+ .project-two .btn-line {
   color: #000 !important;
   display: inline-flex;
   align-items: center;
@@ -18186,6 +18188,7 @@ button {
 }
 
 .bg_image-project-two .title-left-wrapper * {
+
   color: #000000;
 }
 
@@ -25260,19 +25263,16 @@ hr {
   }
 }
 
-.mobile-nav-toggle-arrow::before {
-  font-family: "Font Awesome 6 Free" !important;
-  font-weight: 900;
+/* submenu items ke template arrows completely remove */
+.header-one .nav-area ul ul li a::before,
+.header-one .nav-area ul ul li a::after,
+.header-one .nav-area ul ul li a i {
+  display: none !important;
+  content: none !important;
 }
 
-.mobile-nav-toggle-arrow::before {
-  content: "\f078"; /* chevron-down icon */
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-  display: inline-block;
-}
-
-.header-one .nav-area ul li.has-dropdown > a::after {
+/* sirf main Solutions menu par arrow */
+.header-one .nav-area > ul > li.has-dropdown > a::after {
   content: "\f078";
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
