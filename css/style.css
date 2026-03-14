@@ -13417,7 +13417,7 @@ a.btn-line i {
   transition: transform 0.3s ease;
 }
 a.btn-line:hover {
-  color: var(--color-primary);
+  color: var(--color-primary)!important;
 }
 a.btn-line:hover i {
   transform: translateX(3px);
