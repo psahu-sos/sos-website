@@ -476,31 +476,48 @@
   line-height: 1.15;
 }
 
-.rts-product-area .product-sticky-wrapper-main .product-wrapper .inner .left-content .disc {
+.rts-product-area
+  .product-sticky-wrapper-main
+  .product-wrapper
+  .inner
+  .left-content
+  .disc {
   font-size: 15px;
   line-height: 1.7;
 }
 
-.rts-product-area .product-sticky-wrapper-main .product-wrapper .inner .left-content .feature-list {
+.rts-product-area
+  .product-sticky-wrapper-main
+  .product-wrapper
+  .inner
+  .left-content
+  .feature-list {
   display: grid;
   gap: 12px;
 }
 
-.rts-product-area .product-sticky-wrapper-main .product-wrapper .inner .left-content .feature-list li {
+.rts-product-area
+  .product-sticky-wrapper-main
+  .product-wrapper
+  .inner
+  .left-content
+  .feature-list
+  li {
   align-items: flex-start;
   line-height: 1.55;
   margin-bottom: 0;
 }
 
 .rts-product-area .product-sticky-wrapper-main .product-wrapper .image-area,
-.rts-product-area
-  .product-sticky-wrapper-main
-  .product-wrapper
-  .image-area {
+.rts-product-area .product-sticky-wrapper-main .product-wrapper .image-area {
   width: 100%;
 }
 
-.rts-product-area .product-sticky-wrapper-main .product-wrapper .image-area img {
+.rts-product-area
+  .product-sticky-wrapper-main
+  .product-wrapper
+  .image-area
+  img {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
@@ -508,10 +525,7 @@
   border: 1px solid #e8edf7;
 }
 
-.rts-product-area
-  .product-sticky-wrapper-main
-  .product-wrapper
-  .inner:hover {
+.rts-product-area .product-sticky-wrapper-main .product-wrapper .inner:hover {
   transform: none;
   box-shadow: 0 10px 24px rgba(16, 35, 66, 0.07);
 }
@@ -520,7 +534,10 @@
   bottom: 0 !important;
 }
 
-.rts-product-area .product-sticky-wrapper-main .product-cards-pagination .swiper-pagination-bullet {
+.rts-product-area
+  .product-sticky-wrapper-main
+  .product-cards-pagination
+  .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
   background: rgba(19, 33, 61, 0.2);
@@ -546,7 +563,11 @@
     padding: 34px;
   }
 
-  .rts-product-area .product-sticky-wrapper-main .product-wrapper .inner .left-content {
+  .rts-product-area
+    .product-sticky-wrapper-main
+    .product-wrapper
+    .inner
+    .left-content {
     max-width: 100%;
   }
 }
