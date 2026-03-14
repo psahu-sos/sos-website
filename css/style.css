@@ -18155,13 +18155,31 @@ button {
   z-index: 2;
   padding: 30px 30px;
 }
+.title-area-between .right-area {
+  position: relative;
+  z-index: 10;
+}
 
+.project-two .btn-line {
+  color: #000 !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.project-two .btn-line:hover {
+  color:#fe5b0f!important;
+}
+
+.project-two .btn-line:hover i {
+  color: #fe5b0f !important;
+}
 .bg_image-project-two {
   background-image: url(../image/02.webp);
   background-repeat: no-repeat;
 }
 .bg_image-project-two .title-left-wrapper * {
-  color: #fff;
+  color: #000000;
 }
 
 @media (min-width: 576px) {
@@ -23243,6 +23261,10 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   color: var(--color-white);
   display: block;
   width: 100%;
+}
+
+.desktop-case-study .title {
+  color: #000 !important;
 }
 
 @media (max-width: 1900px) and (min-width: 1600px) {
