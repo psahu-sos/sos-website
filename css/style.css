@@ -14714,7 +14714,6 @@ body.demo-app-development .rts-mega-menu.sm-mega-70 {
 .single-feature-area-three.data-science .content .round-btn:hover i {
   color: var(--color-white);
 }
-
 .round-btn {
   height: 40px;
   width: 40px;
@@ -14723,19 +14722,26 @@ body.demo-app-development .rts-mega-menu.sm-mega-70 {
   align-items: center;
   justify-content: center;
   border: 1px solid var(--color-primary);
-  transition: all 0.3s ease;
-}
-.round-btn i {
-  transform: rotate(-45deg);
   color: var(--color-primary);
+  text-decoration: none;
   transition: all 0.3s ease;
 }
+
+.round-btn i {
+  font-size: 14px;
+  color: var(--color-primary);
+  transform: rotate(-45deg);
+  transition: all 0.3s ease;
+}
+
 .round-btn:hover {
   background: var(--color-primary);
+  border-color: var(--color-primary);
 }
+
 .round-btn:hover i {
+  color: #ffffff !important;
   transform: rotate(0deg);
-  color: #fff;
 }
 
 .rts-service-details-breadcrumb-area {
